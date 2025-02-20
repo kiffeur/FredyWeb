@@ -1650,11 +1650,13 @@
                     const programme = programmeElement ? programmeElement.textContent : '';
                     
                     // Construire le message avec le plan en début de message
-                    const message = `Bonjour, je souhaite m'inscrire au programme ${programme}. 
-                                    Nom: ${nom}
-                                    Prénom: ${prenom}
-                                    Téléphone: ${tel}
-                                    Email: ${email}`;
+                    const message = `Bonjour Coach Fredy, je suis interessé(e) et souhaite m'inscrire au programme *${programme}*.
+
+Je m'appelle : ${nom}\n  
+Mon prénom est : ${prenom}\n  
+Mon numéro de téléphone est : ${tel}\n  
+Et mon adresse e-mail est : ${email}`;
+
                     
                     // Construire le lien WhatsApp et l'ouvrir
                     const whatsappUrl = `https://wa.me/33753862581?text=${encodeURIComponent(message)}`;
