@@ -95,58 +95,6 @@
     <link rel="icon" href="upload/cropped-favicon-circle-192x192.png" sizes="192x192" />
     <link rel="apple-touch-icon" href="upload/cropped-favicon-circle-180x180.png" />
 
-    <style>
-        .custom-alert {
-            display: none;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            z-index: 1000;
-            text-align: center;
-            min-width: 300px;
-            border-top: 4px solid #dc3545;
-        }
-        .custom-alert-overlay {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: rgba(0, 0, 0, 0.5);
-            z-index: 999;
-        }
-        .custom-alert-title {
-            font-size: 18px;
-            font-weight: bold;
-            margin-bottom: 10px;
-            color: #dc3545;
-        }
-        .custom-alert-message {
-            font-size: 14px;
-            color: #666;
-            margin-bottom: 15px;
-            white-space: pre-line;
-        }
-        .custom-alert-button {
-            background-color: #dc3545;
-            color: white;
-            border: none;
-            padding: 8px 16px;
-            border-radius: 4px;
-            cursor: pointer;
-            font-weight: 500;
-            transition: background-color 0.2s;
-        }
-        .custom-alert-button:hover {
-            background-color: #c82333;
-        }
-    </style>
 </head>
 
 <body class="home page-template-default page page-id-14670 theme-zyth gdlr-core-body woocommerce-no-js zyth-body zyth-body-front zyth-full zyth-with-sticky-navigation zyth-blockquote-style-3 gdlr-core-link-to-lightbox" data-home-url="index.html" itemscope itemtype="https://schema.org/WebPage">
@@ -939,7 +887,7 @@
                                                                     <p role="status" aria-live="polite" aria-atomic="true"></p>
                                                                     <ul></ul>
                                                                 </div>
-                                                                <form action="https://max-themes.net/zyth/gym/#wpcf7-f10921-p14670-o1" method="post" class="wpcf7-form init" novalidate="novalidate" data-status="init" data-plan="Perte de Poids">
+                                                                <form action="https://max-themes.net/zyth/gym/#wpcf7-f10921-p14670-o1" method="post" class="wpcf7-form init" novalidate="novalidate" data-status="init">
                                                                     <div style="display: none;">
                                                                         <input type="hidden" name="_wpcf7" value="10921" />
                                                                         <input type="hidden" name="_wpcf7_version" value="5.5.1" />
@@ -954,7 +902,7 @@
                                                                             <span class="wpcf7-form-control-wrap your-first-name">
                                                                                 <input
                                                                                     type="text"
-                                                                                    name="name"
+                                                                                    name="name1"
                                                                                     value=""
                                                                                     size="40"
                                                                                     class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
@@ -968,7 +916,7 @@
                                                                             <span class="wpcf7-form-control-wrap your-last-name">
                                                                                 <input
                                                                                     type="text"
-                                                                                    name="prename"
+                                                                                    name="prename1"
                                                                                     value=""
                                                                                     size="40"
                                                                                     class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
@@ -983,7 +931,7 @@
                                                                             <span class="wpcf7-form-control-wrap your-phone">
                                                                                 <input
                                                                                     type="text"
-                                                                                    name="phone"
+                                                                                    name="phone1"
                                                                                     value=""
                                                                                     size="40"
                                                                                     class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
@@ -997,7 +945,7 @@
                                                                             <span class="wpcf7-form-control-wrap your-email">
                                                                                 <input
                                                                                     type="email"
-                                                                                    name="email"
+                                                                                    name="email1"
                                                                                     value=""
                                                                                     size="40"
                                                                                     class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
@@ -1016,12 +964,28 @@
                                                                         
                                                                         <div class="clear" style="margin-bottom: 30px;"></div>
                                                                         <div class="gdlr-core-column-60 gdlr-core-left-align">
-                                                                            <div class="gdlr-core-price-plan-button">
-                                                                                <a onclick="sendWhatsAppMessage('Perte de Poids')" class="gdlr-core-button gdlr-core-button-solid gdlr-core-center-align gdlr-core-button-no-border" style="background-color: #25D366; padding: 10px 20px;">
-                                                                                    <i class="fab fa-whatsapp"></i> Envoyer sur WhatsApp
-                                                                                </a>
-                                                                            </div>
-                                                                        </div>
+                                                                            <a href="#" id="whatsapp-link" class="wpcf7-form-control wpcf7-submit gdlr-core-large" 
+   style="display: inline-block; 
+          text-decoration: none;
+          background-color: #25D366;
+          color: white;
+          padding: 10px 20px;
+          border-radius: 5px;
+          font-weight: bold;
+          transition: all 0.3s ease;
+          border: none;
+          cursor: pointer;
+          margin: 10px auto;
+          display: inline-flex;
+          align-items: center;
+          width: auto;
+          min-width: 200px;
+          justify-content: center;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="white" style="margin-right: 8px;">
+        <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/>
+    </svg>
+    Continuer sur WhatsApp
+</a>                                                                        </div>
                                                                     </div>
                                                                     <div class="wpcf7-response-output" aria-hidden="true"></div>
                                                                 </form>
@@ -1035,7 +999,7 @@
                                                                     <p role="status" aria-live="polite" aria-atomic="true"></p>
                                                                     <ul></ul>
                                                                 </div>
-                                                                <form action="https://max-themes.net/zyth/gym/#wpcf7-f15044-p14670-o2" method="post" class="wpcf7-form init" novalidate="novalidate" data-status="init" data-plan="Renforcement Musculaire">
+                                                                <form action="https://max-themes.net/zyth/gym/#wpcf7-f15044-p14670-o2" method="post" class="wpcf7-form init" novalidate="novalidate" data-status="init">
                                                                     <div style="display: none;">
                                                                         <input type="hidden" name="_wpcf7" value="15044" />
                                                                         <input type="hidden" name="_wpcf7_version" value="5.5.1" />
@@ -1050,7 +1014,7 @@
                                                                             <span class="wpcf7-form-control-wrap your-first-name">
                                                                                 <input
                                                                                     type="text"
-                                                                                    name="name"
+                                                                                    name="name2"
                                                                                     value=""
                                                                                     size="40"
                                                                                     class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
@@ -1064,7 +1028,7 @@
                                                                             <span class="wpcf7-form-control-wrap your-last-name">
                                                                                 <input
                                                                                     type="text"
-                                                                                    name="prename"
+                                                                                    name="prename2"
                                                                                     value=""
                                                                                     size="40"
                                                                                     class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
@@ -1079,7 +1043,7 @@
                                                                             <span class="wpcf7-form-control-wrap your-phone">
                                                                                 <input
                                                                                     type="text"
-                                                                                    name="phone"
+                                                                                    name="phone2"
                                                                                     value=""
                                                                                     size="40"
                                                                                     class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
@@ -1093,7 +1057,7 @@
                                                                             <span class="wpcf7-form-control-wrap your-email">
                                                                                 <input
                                                                                     type="email"
-                                                                                    name="email"
+                                                                                    name="email2"
                                                                                     value=""
                                                                                     size="40"
                                                                                     class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
@@ -1112,12 +1076,28 @@
                                                                         
                                                                         <div class="clear" style="margin-bottom: 30px;"></div>
                                                                         <div class="gdlr-core-column-60 gdlr-core-left-align">
-                                                                            <div class="gdlr-core-price-plan-button">
-                                                                                <a onclick="sendWhatsAppMessage('Renforcement Musculaire')" class="gdlr-core-button gdlr-core-button-solid gdlr-core-center-align gdlr-core-button-no-border" style="background-color: #25D366; padding: 10px 20px;">
-                                                                                    <i class="fab fa-whatsapp"></i> Envoyer sur WhatsApp
-                                                                                </a>
-                                                                            </div>
-                                                                        </div>
+                                                                            <a href="#" id="whatsapp-link" class="wpcf7-form-control wpcf7-submit gdlr-core-large" 
+   style="display: inline-block; 
+          text-decoration: none;
+          background-color: #25D366;
+          color: white;
+          padding: 10px 20px;
+          border-radius: 5px;
+          font-weight: bold;
+          transition: all 0.3s ease;
+          border: none;
+          cursor: pointer;
+          margin: 10px auto;
+          display: inline-flex;
+          align-items: center;
+          width: auto;
+          min-width: 200px;
+          justify-content: center;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="white" style="margin-right: 8px;">
+        <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/>
+    </svg>
+    Continuer sur WhatsApp
+</a>  </div>
                                                                     </div>
                                                                     <div class="wpcf7-response-output" aria-hidden="true"></div>
                                                                 </form>
@@ -1131,7 +1111,7 @@
                                                                     <p role="status" aria-live="polite" aria-atomic="true"></p>
                                                                     <ul></ul>
                                                                 </div>
-                                                                <form action="https://max-themes.net/zyth/gym/#wpcf7-f15045-p14670-o3" method="post" class="wpcf7-form init" novalidate="novalidate" data-status="init" data-plan="Gain de Masse">
+                                                                <form action="https://max-themes.net/zyth/gym/#wpcf7-f15045-p14670-o3" method="post" class="wpcf7-form init" novalidate="novalidate" data-status="init">
                                                                     <div style="display: none;">
                                                                         <input type="hidden" name="_wpcf7" value="15045" />
                                                                         <input type="hidden" name="_wpcf7_version" value="5.5.1" />
@@ -1146,7 +1126,7 @@
                                                                             <span class="wpcf7-form-control-wrap your-first-name">
                                                                                 <input
                                                                                     type="text"
-                                                                                    name="name"
+                                                                                    name="name3"
                                                                                     value=""
                                                                                     size="40"
                                                                                     class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
@@ -1160,7 +1140,7 @@
                                                                             <span class="wpcf7-form-control-wrap your-last-name">
                                                                                 <input
                                                                                     type="text"
-                                                                                    name="prename"
+                                                                                    name="prename3"
                                                                                     value=""
                                                                                     size="40"
                                                                                     class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
@@ -1175,7 +1155,7 @@
                                                                             <span class="wpcf7-form-control-wrap your-phone">
                                                                                 <input
                                                                                     type="text"
-                                                                                    name="phone"
+                                                                                    name="phone3"
                                                                                     value=""
                                                                                     size="40"
                                                                                     class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
@@ -1189,7 +1169,7 @@
                                                                             <span class="wpcf7-form-control-wrap your-email">
                                                                                 <input
                                                                                     type="email"
-                                                                                    name="email"
+                                                                                    name="email3"
                                                                                     value=""
                                                                                     size="40"
                                                                                     class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
@@ -1208,12 +1188,28 @@
                                                                         
                                                                         <div class="clear" style="margin-bottom: 30px;"></div>
                                                                         <div class="gdlr-core-column-60 gdlr-core-left-align">
-                                                                            <div class="gdlr-core-price-plan-button">
-                                                                                <a onclick="sendWhatsAppMessage('Gain de Masse')" class="gdlr-core-button gdlr-core-button-solid gdlr-core-center-align gdlr-core-button-no-border" style="background-color: #25D366; padding: 10px 20px;">
-                                                                                    <i class="fab fa-whatsapp"></i> Envoyer sur WhatsApp
-                                                                                </a>
-                                                                            </div>
-                                                                        </div>
+                                                                            <a href="#" id="whatsapp-link" class="wpcf7-form-control wpcf7-submit gdlr-core-large" 
+   style="display: inline-block; 
+          text-decoration: none;
+          background-color: #25D366;
+          color: white;
+          padding: 10px 20px;
+          border-radius: 5px;
+          font-weight: bold;
+          transition: all 0.3s ease;
+          border: none;
+          cursor: pointer;
+          margin: 10px auto;
+          display: inline-flex;
+          align-items: center;
+          width: auto;
+          min-width: 200px;
+          justify-content: center;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="white" style="margin-right: 8px;">
+        <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/>
+    </svg>
+    Continuer sur WhatsApp
+</a>                </div>
                                                                     </div>
                                                                     <div class="wpcf7-response-output" aria-hidden="true"></div>
                                                                 </form>
@@ -1417,7 +1413,8 @@
                                 <p><span class="gdlr-core-space-shortcode" style="margin-top: -50px;"></span><br /></p>
                                 <div class="gdlr-core-social-network-item gdlr-core-item-pdb gdlr-core-none-align gdlr-direction-horizontal" style="padding-bottom: 0px;">
                                     <a href="#" target="_blank" class="gdlr-core-social-network-icon" title="facebook" style="font-size: 20px; margin-right: 32px;"><i class="fa fa-facebook"></i></a>
-                                    <a href="#" target="_blank" class="gdlr-core-social-network-icon" title="pinterest" style="font-size: 20px; margin-right: 32px;"><i class="fa fa-pinterest-p"></i></a><a href="#" target="_blank" class="gdlr-core-social-network-icon" title="twitter" style="font-size: 20px; margin-right: 32px;"><i class="fa fa-twitter"></i></a>
+                                    <a href="#" target="_blank" class="gdlr-core-social-network-icon" title="pinterest" style="font-size: 20px; margin-right: 32px;"><i class="fa fa-pinterest-p"></i></a>
+                                    <a href="#" target="_blank" class="gdlr-core-social-network-icon" title="twitter" style="font-size: 20px; margin-right: 32px;"><i class="fa fa-twitter"></i></a>
                                     <a href="#" target="_blank" class="gdlr-core-social-network-icon" title="instagram" style="font-size: 20px; margin-right: 32px;"><i class="fa fa-instagram"></i></a>
                                 </div>
                             </div>
@@ -1450,12 +1447,7 @@
         </div>
     </div>
 
-    <div class="custom-alert-overlay" id="alertOverlay"></div>
-    <div class="custom-alert" id="customAlert">
-        <div class="custom-alert-title">Attention</div>
-        <div class="custom-alert-message" id="alertMessage"></div>
-        <button class="custom-alert-button" onclick="closeAlert()">OK</button>
-    </div>
+    
 
     <script type="text/javascript" src="js/jquery.minaf6c.js?ver=3.6.0" id="jquery-core-js"></script>
     <script type="text/javascript" src="js/jquery-migrate.mind617.js?ver=3.3.2" id="jquery-migrate-js"></script>
@@ -1481,57 +1473,160 @@
     </script>
     <script type="text/javascript" src="js/plugins/mp-timetable/media/js/events/event.mina305.js?ver=2.4.2" id="mptt-event-object-js"></script>
 
-    <script>
-        function sendWhatsAppMessage(planType) {
-            // Récupérer les champs du formulaire en fonction du plan
-            const form = document.querySelector(`form[data-plan="${planType}"]`);
-            const name = form.querySelector('input[name="name"]').value.trim();
-            const prename = form.querySelector('input[name="prename"]').value.trim();
-            const phone = form.querySelector('input[name="phone"]').value.trim();
-            const email = form.querySelector('input[name="email"]').value.trim();
 
-            // Vérifier que tous les champs sont remplis
-            const emptyFields = [];
-            if (!name) emptyFields.push('Nom');
-            if (!prename) emptyFields.push('Prénom');
-            if (!phone) emptyFields.push('Téléphone');
-            if (!email) emptyFields.push('Email');
 
-            if (emptyFields.length > 0) {
-                const message = `Veuillez remplir les champs suivants :\n${emptyFields.join('\n')}`;
-                showAlert(message);
-                return;
+    <script type="text/javascript">
+        function setREVStartSize(e) {
+            //window.requestAnimationFrame(function() {
+            window.RSIW = window.RSIW === undefined ? window.innerWidth : window.RSIW;
+            window.RSIH = window.RSIH === undefined ? window.innerHeight : window.RSIH;
+            try {
+                var pw = document.getElementById(e.c).parentNode.offsetWidth,
+                    newh;
+                pw = pw === 0 || isNaN(pw) ? window.RSIW : pw;
+                e.tabw = e.tabw === undefined ? 0 : parseInt(e.tabw);
+                e.thumbw = e.thumbw === undefined ? 0 : parseInt(e.thumbw);
+                e.tabh = e.tabh === undefined ? 0 : parseInt(e.tabh);
+                e.thumbh = e.thumbh === undefined ? 0 : parseInt(e.thumbh);
+                e.tabhide = e.tabhide === undefined ? 0 : parseInt(e.tabhide);
+                e.thumbhide = e.thumbhide === undefined ? 0 : parseInt(e.thumbhide);
+                e.mh = e.mh === undefined || e.mh == "" || e.mh === "auto" ? 0 : parseInt(e.mh, 0);
+                if (e.layout === "fullscreen" || e.l === "fullscreen") newh = Math.max(e.mh, window.RSIH);
+                else {
+                    e.gw = Array.isArray(e.gw) ? e.gw : [e.gw];
+                    for (var i in e.rl) if (e.gw[i] === undefined || e.gw[i] === 0) e.gw[i] = e.gw[i - 1];
+                    e.gh = e.el === undefined || e.el === "" || (Array.isArray(e.el) && e.el.length == 0) ? e.gh : e.el;
+                    e.gh = Array.isArray(e.gh) ? e.gh : [e.gh];
+                    for (var i in e.rl) if (e.gh[i] === undefined || e.gh[i] === 0) e.gh[i] = e.gh[i - 1];
+
+                    var nl = new Array(e.rl.length),
+                        ix = 0,
+                        sl;
+                    e.tabw = e.tabhide >= pw ? 0 : e.tabw;
+                    e.thumbw = e.thumbhide >= pw ? 0 : e.thumbw;
+                    e.tabh = e.tabhide >= pw ? 0 : e.tabh;
+                    e.thumbh = e.thumbhide >= pw ? 0 : e.thumbh;
+                    for (var i in e.rl) nl[i] = e.rl[i] < window.RSIW ? 0 : e.rl[i];
+                    sl = nl[0];
+                    for (var i in nl)
+                        if (sl > nl[i] && nl[i] > 0) {
+                            sl = nl[i];
+                            ix = i;
+                        }
+                    var m = pw > e.gw[ix] + e.tabw + e.thumbw ? 1 : (pw - (e.tabw + e.thumbw)) / e.gw[ix];
+                    newh = e.gh[ix] * m + (e.tabh + e.thumbh);
+                }
+                var el = document.getElementById(e.c);
+                if (el !== null && el) el.style.height = newh + "px";
+                el = document.getElementById(e.c + "_wrapper");
+                if (el !== null && el) {
+                    el.style.height = newh + "px";
+                    el.style.display = "block";
+                }
+            } catch (e) {
+                console.log("Failure at Presize of Slider:" + e);
             }
-
-            // Formater le message WhatsApp
-            const message = `Bonjour Coach Fredy, je suis intéressé(e) par le programme ${planType}.\n\nMes informations :\nNom : ${name}\nPrénom : ${prename}\nTéléphone : ${phone}\nEmail : ${email}`;
-            
-            // Encoder le message pour l'URL
-            const encodedMessage = encodeURIComponent(message);
-            
-            // Numéro WhatsApp du coach
-            const phoneNumber = "33766516363";
-            
-            // Créer le lien WhatsApp et rediriger
-            const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
-            window.open(whatsappUrl, '_blank');
+            //});
         }
     </script>
-
-    <script>
-        function showAlert(message) {
-            document.getElementById('alertMessage').textContent = message;
-            document.getElementById('customAlert').style.display = 'block';
-            document.getElementById('alertOverlay').style.display = 'block';
-        }
-
-        function closeAlert() {
-            document.getElementById('customAlert').style.display = 'none';
-            document.getElementById('alertOverlay').style.display = 'none';
+    <script type="text/javascript">
+        setREVStartSize({
+            c: "rev_slider_1_1",
+            rl: [1240, 1024, 778, 480],
+            el: [1088, 768, 700, 500],
+            gw: [1320, 1024, 778, 480],
+            gh: [1088, 768, 700, 500],
+            type: "standard",
+            justify: "",
+            layout: "fullwidth",
+            mh: "0",
+        });
+        if (window.RS_MODULES !== undefined && window.RS_MODULES.modules !== undefined && window.RS_MODULES.modules["revslider11"] !== undefined) {
+            window.RS_MODULES.modules["revslider11"].once = false;
+            window.revapi1 = undefined;
+            if (window.RS_MODULES.checkMinimal !== undefined) window.RS_MODULES.checkMinimal();
         }
     </script>
+    <script type="text/javascript">
+        window.RS_MODULES = window.RS_MODULES || {};
+        window.RS_MODULES.modules = window.RS_MODULES.modules || {};
+        window.RS_MODULES.waiting = window.RS_MODULES.waiting || [];
+        window.RS_MODULES.defered = true;
+        window.RS_MODULES.moduleWaiting = window.RS_MODULES.moduleWaiting || {};
+        window.RS_MODULES.type = "compiled";
+    </script>
+    <script type="text/javascript">
+        if (typeof revslider_showDoubleJqueryError === "undefined") {
+            function revslider_showDoubleJqueryError(sliderID) {
+                console.log("You have some jquery.js library include that comes after the Slider Revolution files js inclusion.");
+                console.log("To fix this, you can:");
+                console.log("1. Set 'Module General Options' -> 'Advanced' -> 'jQuery & OutPut Filters' -> 'Put JS to Body' to on");
+                console.log("2. Find the double jQuery.js inclusion and remove it");
+                return "Double Included jQuery Library";
+            }
+        }
+    </script>
+    <script type="text/javascript" id="rs-initialisation-scripts">
+        var tpj = jQuery;
 
-    <script>
+        var revapi1;
+
+        if (window.RS_MODULES === undefined) window.RS_MODULES = {};
+        if (RS_MODULES.modules === undefined) RS_MODULES.modules = {};
+        RS_MODULES.modules["revslider11"] = {
+            once: RS_MODULES.modules["revslider11"] !== undefined ? RS_MODULES.modules["revslider11"].once : undefined,
+            init: function () {
+                window.revapi1 = window.revapi1 === undefined || window.revapi1 === null || window.revapi1.length === 0 ? document.getElementById("rev_slider_1_1") : window.revapi1;
+                if (window.revapi1 === null || window.revapi1 === undefined || window.revapi1.length == 0) {
+                    window.revapi1initTry = window.revapi1initTry === undefined ? 0 : window.revapi1initTry + 1;
+                    if (window.revapi1initTry < 20)
+                        requestAnimationFrame(function () {
+                            RS_MODULES.modules["revslider11"].init();
+                        });
+                    return;
+                }
+                window.revapi1 = jQuery(window.revapi1);
+                if (window.revapi1.revolution == undefined) {
+                    revslider_showDoubleJqueryError("rev_slider_1_1");
+                    return;
+                }
+                revapi1.revolutionInit({
+                    revapi: "revapi1",
+                    DPR: "dpr",
+                    sliderLayout: "fullwidth",
+                    visibilityLevels: "1240,1024,778,480",
+                    gridwidth: "1320,1024,778,480",
+                    gridheight: "1088,768,700,500",
+                    lazyType: "smart",
+                    perspective: 600,
+                    perspectiveType: "local",
+                    editorheight: "1088,768,700,500",
+                    responsiveLevels: "1240,1024,778,480",
+                    progressBar: { disableProgressBar: true },
+                    navigation: {
+                        wheelCallDelay: 1000,
+                        onHoverStop: false,
+                        touch: {
+                            touchenabled: true,
+                        },
+                    },
+                    viewPort: {
+                        global: true,
+                        globalDist: "-200px",
+                        enable: false,
+                    },
+                    fallbacks: {
+                        allowHTML5AutoPlayOnAndroid: true,
+                    },
+                });
+            },
+        }; // End of RevInitScript
+
+        if (window.RS_MODULES.checkMinimal !== undefined) {
+            window.RS_MODULES.checkMinimal();
+        }
+    </script>
+    <script type="text/javascript">
         document.addEventListener('DOMContentLoaded', function() {
             const whatsappLinks = document.querySelectorAll('#whatsapp-link');
             
@@ -1544,10 +1639,10 @@
                     const formNumber = index + 1;
                     
                     // Récupérer les valeurs du formulaire avec le bon numéro
-                    const nom = form.querySelector(`[name="name"]`).value;
-                    const prenom = form.querySelector(`[name="prename"]`).value;
-                    const tel = form.querySelector(`[name="phone"]`).value;
-                    const email = form.querySelector(`[name="email"]`).value;
+                    const nom = form.querySelector(`[name="name${formNumber}"]`).value;
+                    const prenom = form.querySelector(`[name="prename${formNumber}"]`).value;
+                    const tel = form.querySelector(`[name="phone${formNumber}"]`).value;
+                    const email = form.querySelector(`[name="email${formNumber}"]`).value;
                     
                     // Récupérer le type de programme sélectionné depuis le titre
                     // Modification ici pour cibler le bon titre
